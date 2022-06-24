@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de seguros</title>
+    <script defer src="script.js"></script>
+    <script defer src="variables.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="fondo-gris">
+    <div class="div-1">
+    <h1 class="titulo">Cotizador de seguros</h1>
+    </div>
+    <div class=flex>
+        <div class="input-cotizacion">
+            <form class="form">
+                <div class="form-div">
+                    <label for="modelo">Modelo:</label>
+                    <select id="selectModeloAuto">
+                    </select>
+                </div>
+                <div class="form-div">
+                    <label for="año">Año:</label>
+                    <select id="selectAñoAuto">
+                    </select>
+                </div>
+                <div class="form-div">
+                    <button type="button" id="btnCotizar">Cotizar</button>
+                </div>
+            </form>
+        </div>
+        <div class="tabla">
+            <div class="tabla-div">
+                <p></p>
+            </div>
+            <div class="tabla-div">
+                <p>Clasico</p>
+            </div>
+            <div class="tabla-div">
+                <p>Premium</p>
+            </div>
+            <div class="tabla-div">
+                <p>Diamond</p>
+            </div>
+            <div class="tabla-div">
+                <p>Responsabilidad Civil</p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>Asistencia mecánica y remolque</p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>Reposición de 0 km</p>
+            </div>
+            <div class="tabla-div">
+                <p></p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>Robo total</p>
+            </div>
+            <div class="tabla-div">
+                <p></p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>Incendio total</p>
+            </div>
+            <div class="tabla-div">
+                <p></p>
+            </div>
+            <div class="tabla-div">
+                <p></p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>Daño total por accidente</p>
+            </div>
+            <div class="tabla-div">
+                <p></p>
+            </div>
+            <div class="tabla-div">
+                <p></p>
+            </div>
+            <div class="tabla-div">
+                <p>X</p>
+            </div>
+            <div class="tabla-div">
+                <p>Precio</p>
+            </div>
+            <div class="tabla-div">
+                <p id=valorCuotaClasico></p>
+            </div>
+            <div class="tabla-div">
+                <p id=valorCuotaPremium></p>
+            </div>
+            <div class="tabla-div">
+                <p id=valorCuotaDiamond></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Nuestros vehiculos asegurados</h2>
+        <table>
+            <tr>
+                <td>Modelo</td>
+                <td>Año</td>
+            </tr>
+        </table>
+        <table id=tablaAsegurados>
+        </table>
+    </div>
+</body>
+</html>
