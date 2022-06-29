@@ -91,9 +91,15 @@ const CotizarSeguro = ()=> {
 }
 
 
+const guardarLocalModelo = (clave,valor) => {localStorage.setItem(clave,valor)
+};
 
+guardarLocalModelo("ModeloAuto", JSON.stringify(ModeloAuto));
 
+const guardarLocalAño = (clave,valor) => {localStorage.setItem(clave,valor)
+};
 
+guardarLocalAño("AñoAuto", JSON.stringify(AñoAuto));
 
 
 
