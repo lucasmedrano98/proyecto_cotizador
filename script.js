@@ -1,3 +1,7 @@
+swal("¡Bienvenido al cotizador de seguros!", "Aqui se podrá calcular el costo del seguro de una gran cantidad de vehículos",
+{button: "¡Gracias!",});
+
+
 class auto {
     constructor (modelo, año) {
         this.modelo = modelo.toUpperCase();

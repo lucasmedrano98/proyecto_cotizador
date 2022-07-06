@@ -6,3 +6,12 @@ const valorCuotaPremium = document.querySelector("#valorCuotaPremium")
 const valorCuotaDiamond = document.querySelector("#valorCuotaDiamond")
 
 btnCotizar.addEventListener ("click", ()=>CotizarSeguro())
+btnCotizar.addEventListener ("click", ()=>{
+    Toastify({
+        text: "¡Clickea aquí para asegurar tu vehiculo con nosotros!",
+        duration: 1500,
+        gravity: 'bottom',
+        position:'right',
+        destination: 'https://www.coderhouse.com'
+    }).showToast();
+})
