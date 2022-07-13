@@ -106,6 +106,34 @@ const guardarLocalAño = (clave,valor) => {localStorage.setItem(clave,valor)
 guardarLocalAño("AñoAuto", JSON.stringify(AñoAuto));
 
 
+const obtenerContenido = (URL)=> {
+    let vehiculosAmostrar = ""
+    fetch(URL)
+   .then((response)=> response.json())
+   .then( (data)=>{
+        for (contenido of data) {
+            vehiculosAmostrar += listarautos(contenido)
+        }
+        document.querySelector("#tablaAsegurados").innerHTML = vehiculosAmostrar
+   }) 
+}
+
+const listarautos= (contenido)=> {
+    const {id, marca, modelo, año, color, estado} = contenido
+    return    `<tr>
+                   <td>${id}</td>
+                   <td>${marca}</td>
+                   <td>${modelo}</td>
+                   <td>${año}</td>
+                   <td>${color}</td>
+                   <td>${estado}</td>
+               </tr>`
+   }
+
+
+
+
+
 
 
 
@@ -147,18 +175,7 @@ function buscarautos(){
         console.log (resultado)
 }
 
-const listarautos= ()=> {
-    console.table(autos);
-        autos.forEach ((auto)=> {
-            let fila=`<tr>
-                        <td>${auto.modelo}</td>
-                        <td>${auto.año}</td>
-                    </tr>`
-                        document.querySelector("#tablaAsegurados").innerHTML += fila
-        });
-}
 
-listarautos()
 
 
 

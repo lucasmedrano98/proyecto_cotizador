@@ -5,7 +5,7 @@ margin:0;
 }
 
 .fondo-gris {
-    background-color: rgb(85, 85, 84);
+    background-color: rgb(253, 253, 252);
 }
 
 .div-1 {
@@ -70,4 +70,34 @@ input{
 
 p{
     text-align: center;
+}
+
+.inicio_div_1{
+    margin: auto;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inicio_div_1_div {
+    display: flex;
+    border-radius: 3px;
+    height: 100px;
+    margin: 2px;
+    width:375px;
+    background-color:#ffffff;
+    justify-content: center;
+}
+
+.inicio_div_1_div_a {
+    margin-top: 20px;
+}
+
+.inicio_div_2 {
+    width: 100%;
+}
+
+td{
+    padding:5px;
 }

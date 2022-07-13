@@ -1,0 +1,43 @@
+
+[
+    {
+        "id":1,
+        "marca":"Peugeot",
+        "modelo":"407",
+        "año":"2015",
+        "color":"gris",
+        "estado":"impecable"
+    },
+    {
+        "id":2,
+        "marca":"Audi",
+        "modelo":"A4",
+        "año":"2014",
+        "color":"blanco",
+        "estado":"defectuoso"
+    },
+    {
+        "id":3,
+        "marca":"Chevrolet",
+        "modelo":"Corsa",
+        "año":"2008",
+        "color":"verde",
+        "estado":"defectuoso"
+    },
+    {
+        "id":4,
+        "marca":"Ford",
+        "modelo":"Fiesta",
+        "año":"2013",
+        "color":"azul",
+        "estado":"impecable"
+    },
+    {
+        "id":5,
+        "marca":"Honda",
+        "modelo":"Fit",
+        "año":"2009",
+        "color":"gris",
+        "estado":"regular"
+    }
+]

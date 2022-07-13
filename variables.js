@@ -4,6 +4,8 @@ const btnCotizar = document.querySelector("#btnCotizar")
 const valorCuotaClasico = document.querySelector("#valorCuotaClasico")
 const valorCuotaPremium = document.querySelector("#valorCuotaPremium")
 const valorCuotaDiamond = document.querySelector("#valorCuotaDiamond")
+const URL= `cotizados.json` 
+
 
 btnCotizar.addEventListener ("click", ()=>CotizarSeguro())
 btnCotizar.addEventListener ("click", ()=>{
@@ -15,3 +17,4 @@ btnCotizar.addEventListener ("click", ()=>{
         destination: 'https://www.coderhouse.com'
     }).showToast();
 })
+btnVehiculos.addEventListener ("click", ()=>obtenerContenido(URL))
