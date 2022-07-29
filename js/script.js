@@ -25,6 +25,19 @@ class A {
 
 const ModeloAuto = []               
 const AñoAuto = []
+const ModeloMoto = [
+{modelo:"125H",
+factor:0.3},
+{modelo:"Gixxer",
+factor:0.4,},
+{modelo:"Rouser",
+factor:0.5},
+{modelo:"Dominar 400",
+factor:0.8},
+{modelo:"Interceptor",
+factor:1.1},
+]
+
 const costoClasico = 3000
 const costoPremium = 4500
 const costoDiamond = 6000
@@ -79,6 +92,7 @@ const cargoAñoAuto = ()=> {
     }
     ); return optionAA}
 
+
 selectAñoAuto.innerHTML = cargoAñoAuto()
 selectModeloAuto.innerHTML = cargoModeloAuto()
 
@@ -89,9 +103,9 @@ const CotizarSeguro = ()=> {
     let valordeCuotaDiamond= costoDiamond*añ*mod
     let valordeCuotaPremium= costoPremium*añ*mod
 
-    valorCuotaClasico.innerText = valordeCuotaClasico
-    valorCuotaPremium.innerText = valordeCuotaPremium
-    valorCuotaDiamond.innerText = valordeCuotaDiamond
+    valorCuotaClasico.innerText = valordeCuotaClasico.toFixed(1)
+    valorCuotaPremium.innerText = valordeCuotaPremium.toFixed(1)
+    valorCuotaDiamond.innerText = valordeCuotaDiamond.toFixed(1)
 }
 
 
@@ -131,7 +145,16 @@ const listarautos= (contenido)=> {
    }
 
 
-
+   btnCotizar.addEventListener ("click", ()=>CotizarSeguro())
+   btnCotizar.addEventListener ("click", ()=>{
+       Toastify({
+           text: "¡Clickea aquí para asegurar tu vehiculo con nosotros!",
+           duration: 3000,
+           gravity: 'bottom',
+           position:'right',
+           destination: 'https://www.coderhouse.com'
+       }).showToast();
+   })
 
 
 
